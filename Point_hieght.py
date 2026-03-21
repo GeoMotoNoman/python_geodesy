@@ -10,7 +10,7 @@ def point_height (*args):
     for point in points :
         for key,value  in point.items() :
             deviation = project_high - point ["height"]
-        print(f"deviation from the mean:{point["name"]} , {round (deviation ,3 )}")
+        print(f"deviation from the mean:{point['name']} , {round (deviation ,3 )}")
                 #print(f"deviation from the mean:{point["name"]}, = {deviation} ")
 
 
