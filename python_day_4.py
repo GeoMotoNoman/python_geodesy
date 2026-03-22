@@ -1,3 +1,7 @@
+import  math
+
+
+
 geo_data = [
     {"name": "P1", "x": 10000, "y": 10000},
     {"name": "P2", "x": 10100, "y": 10050},
@@ -21,9 +25,22 @@ def distance (points):
 
         results [key] = d
 
-    return results
+        rumb = math.degrees(math.atan2(dx , dy))
+        azimuth = (90 - rumb) % 360
 
-print(distance(geo_data))
+
+        print(round(azimuth ,3 ))
+
+    return azimuth
+
+
+
+
+
+
+
+
+distance(geo_data)
 
 
 
